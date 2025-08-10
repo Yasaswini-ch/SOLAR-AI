@@ -1,0 +1,53 @@
+:root {
+  --background: #111315;
+  --card-bg: rgba(30, 32, 35, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --text-primary: #f1f1f1;
+  --text-secondary: #a8a8a8;
+  --accent-green: #23f2a8;
+  --accent-pink: #e734a7;
+  --accent-purple: #a430f0;
+  --accent-blue: #23a0f2;
+  --chart-line-color: var(--accent-purple);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* --- FIX #1: ANIMATED GRADIENT TEXT --- */
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient-text {
+  background: linear-gradient(
+    90deg,
+    var(--accent-green),
+    var(--accent-blue),
+    var(--accent-pink),
+    var(--accent-green)
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 10s ease infinite;
+}
