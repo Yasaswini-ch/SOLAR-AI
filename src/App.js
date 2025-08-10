@@ -272,8 +272,10 @@ const HeroSection = () => {
   return (
     <Section>
       <h1>
-        <span className="animated-gradient-text">Predict Solar Future</span>{" "}
-        <br /> with AI Precision
+        <span className="animated-gradient-text">
+          Predict Solar Future with AI Precision
+        </span>{" "}
+        <br />
       </h1>
       <p>
         Harness the power of geospatial analysis and machine learning to assess
@@ -555,7 +557,7 @@ const AIPoweredCalculator = () => {
   return (
     <Section>
       <h2>
-        AI-Powered{" "}
+        {" "}
         <span className="animated-gradient-text">
           {" "}
           AI-Powered Solar Calculator
